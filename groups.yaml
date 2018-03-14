@@ -1,0 +1,252 @@
+#Groups
+  AndrewSmokeDetector:
+    name: Andrew Smoke Detector
+    icon: mdi:nest-protect
+    entities:
+    - sensor.smoke_detector_andrew
+    - sensor.smoke_detector_andrew_co
+    - sensor.smoke_detector_andrew_battery
+  BrianSmokeDetector:
+    name: Brian Smoke Detector
+    icon: mdi:nest-protect
+    entities:
+    - sensor.smoke_detector_brian
+    - sensor.smoke_detector_brian_co
+    - sensor.smoke_detector_brian_battery
+
+  MasterBedroomSmokeDetector:
+    name: Master Bedroom Smoke Detector
+    icon: mdi:nest-protect
+    entities:
+    - sensor.smoke_detector_master_bedroom
+    - sensor.smoke_detector_master_co
+    - sensor.smoke_detector_master_battery  
+
+  UpstairsSmokeDetector:
+    name: Upstairs Smoke Detector
+    icon: mdi:nest-protect
+    entities:
+    - sensor.smoke_detector_upstairs
+    - sensor.smoke_detector_upstairs_co
+    - sensor.smoke_detector_upstairs_battery
+
+  LivingRoomSmokeDetector:
+    name: Living Room Smoke Detector
+    icon: mdi:nest-protect
+    entities:
+    - sensor.smoke_detector_living_room
+    - sensor.smoke_detector_living_room_co
+    - sensor.smoke_detector_living_room_battery  
+
+  LoftSmokeDetector:
+    name: Loft Smoke Detector
+    icon: mdi:nest-protect
+    entities:
+    - sensor.smoke_detector_roof
+    - sensor.smoke_detector_roof_co
+    - sensor.smoke_detector_roof_battery    
+  
+  Thermostat:
+    name: Central Heating
+    icon: mdi:nest-thermostat
+    entities:
+      - sensor.central_heating_thermostat_temperature
+      - sensor.central_heating_thermostat_target
+      - sensor.central_heating_thermostat_humidity_2
+      - climate.central_heating
+
+
+  MediaPlayers:
+    name: Media Players
+    entities:
+    - media_player.living_room_ue40ju6400
+    - media_player.kd55xe9005
+    #- sensor.plex
+    #- media_player.spotify
+    #- media_player.scotts_chromecast
+  
+  LoftTemperature:
+    name: Loft Temperature
+    icon: mdi:thermometer
+    entities:
+    - sensor.mqttlofttemperature
+    - sensor.mqttloftbattery
+    - sensor.mqttloftbatterylow
+
+  Bedroom1:
+    name: Brian Bedroom
+    icon: mdi:thermometer
+    entities:
+    - sensor.mqttbedroom1temperature
+    - sensor.mqttbedroom1battery
+    - sensor.mqttbedroom1mbatterylow
+    - sensor.smoke_detector_brian
+    - sensor.smoke_detector_brian_co
+    - sensor.smoke_detector_brian_battery
+  
+  Bedroom2:
+    name: Andrew Bedroom
+    icon: mdi:thermometer
+    entities:
+    - sensor.mqttbedroom2temperature
+    - sensor.mqttbedroom2battery
+    - sensor.mqttbedroom2batterylow
+    - sensor.smoke_detector_andrew
+    - sensor.smoke_detector_andrew_co
+    - sensor.smoke_detector_andrew_battery  
+
+  Bedroom3:
+    name: Master Bedroom
+    icon: mdi:thermometer
+    entities:
+    - sensor.mqttbedroom3temperature
+    - sensor.mqttbedroom3battery
+    - sensor.mqttbedroom3batterylow
+    - sensor.smoke_detector_master_bedroom
+    - sensor.smoke_detector_master_co
+    - sensor.smoke_detector_master_battery 
+
+  Bathroom:
+    name: Bathroom
+    icon: mdi:thermometer
+    entities:
+    - sensor.mqttbathroomtemperature
+    - sensor.mqttbathroombattery
+    - sensor.mqttbathroombatterylow
+   
+
+  LivingRoom:
+    name: Living Room
+    icon: mdi:thermometer
+    entities:
+    - sensor.mqttlivingroomtemperature
+    - sensor.mqttlivingroombattery
+    - sensor.mqttlivingroombatterylow
+    - sensor.smoke_detector_living_room
+    - sensor.smoke_detector_living_room_co
+    - sensor.smoke_detector_living_room_battery
+
+  Kitchen:
+    name: Kitchen
+    icon: mdi:thermometer
+    entities:
+    - sensor.mqttkitchentemperature
+    - sensor.mqttkitchenbattery
+    - sensor.mqttkitchenbatterylow    
+    - sensor.mqttwatercylindertop
+
+  OutdoorGroup:
+    name: Outdoors
+    icon: mdi:thermometer
+    entities:
+    - sensor.mqttoutdoorstemperature
+    - sensor.mqttoutdoorsbattery
+    - sensor.mqttoutdoorsbatterylow    
+    - sensor.mqttoutdoorspressure  
+    - sensor.mqttoutdoorshumidity
+
+  WaterGroup:
+    name: Water
+    icon: mdi:thermometer
+    entities:
+    - sensor.mqttwatersolarcollector
+    - sensor.mqttwatercylindertop
+    - sensor.mqttwatercylinderbase 
+  
+  OverviewTempGroup:
+    name: House Temperatures
+    icon: mdi:thermometer
+    entities:
+    - sensor.mqttbedroom1temperature
+    - sensor.mqttbedroom2temperature
+    - sensor.mqttbedroom3temperature      
+    - sensor.mqttbathroomtemperature
+    - sensor.mqttkitchentemperature
+    - sensor.mqttlivingroomtemperature
+    - sensor.mqttlofttemperature
+    - sensor.mqttoutdoorstemperature
+  
+  PowerGroup:
+    name: Gas & Electric
+    icon: mdi:power
+    entities:
+    - sensor.mqttpowergasmeter
+    - sensor.mqttpowerelectricmeter
+    - sensor.mqttpowermainscurrent   
+    - sensor.mqttpoweravgmainscurrent 
+    - sensor.mqttpowermaxmainscurrent 
+    
+#  OverviewAlarmGroup:
+#    name: Alarm
+#    icon: mdi:door
+#    entities:
+#    - binary_sensor.alarmfrontdoor
+#    - binary_sensor.alarmbackdoor
+#    - binary_sensor.alarmshedsdoor
+#    - binary_sensor.alarmlrwindow
+#    - binary_sensor.alarmbrianwindow
+#    - binary_sensor.alarmkitchenwindow
+#Tabs
+  default_view:
+    view: yes
+    name: Home
+    entities:
+    - group.OverviewTempGroup
+    #- group.OverviewAlarmGroup
+    - climate.central_heating
+    - group.WaterGroup
+    - group.PowerGroup
+
+  Downstairs:
+    name: Downstairs
+    view: yes
+    entities:
+    - group.Bedroom1
+    - group.LivingRoom
+    - group.Kitchen
+
+  Upstairs:
+    name: Upstairs
+    view: yes
+    entities:
+    - group.Bedroom2
+    - group.Bedroom3
+    - group.Bathroom
+    - group.upstairssmokedetector
+
+  Loft:
+    name: Loft
+    view: yes
+    entities:
+    - group.LoftSmokeDetector
+    - group.LoftTemperature
+
+  Outdoors:
+    name: Outdoors
+    view: yes
+    entities:
+    - group.OutdoorGroup
+
+  MediaView:
+    name: Media
+    view: yes
+    entities:
+    - group.mediaplayers
+
+  ThermostatView:
+    name: Heating & Hot Water
+    view: yes
+    entities:
+    - group.thermostat
+    - group.WaterGroup
+
+  SmokeDetectorView:
+    name: Smoke Detectors
+    view: yes
+    entities:
+    - group.LivingRoomSmokeDetector
+    - group.andrewsmokedetector
+    - group.briansmokedetector
+    - group.MasterBedroomSmokeDetector
+    - group.upstairssmokedetector
+    - group.LoftSmokeDetector

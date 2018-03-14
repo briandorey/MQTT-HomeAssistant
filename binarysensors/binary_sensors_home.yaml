@@ -1,0 +1,41 @@
+- platform: mqtt
+  state_topic: 'home/alarm/$online'
+  name: alarmfrontdoor
+  payload_on: "true"
+  payload_off: "false"
+  device_class: door
+
+- platform: mqtt
+  state_topic: 'home/alarm/$online'
+  name: alarmbackdoor
+  payload_on: "true"
+  payload_off: "false"
+  device_class: door
+
+- platform: mqtt
+  state_topic: 'home/alarm/$online'
+  name: alarmshedsdoor
+  payload_on: "true"
+  payload_off: "false"
+  device_class: door  
+
+- platform: mqtt
+  state_topic: 'home/alarm/$online'
+  name: alarmlrwindow
+  payload_on: "true"
+  payload_off: "false"
+  device_class: window
+
+- platform: mqtt
+  state_topic: 'home/alarm/$online'
+  name: alarmbrianwindow
+  payload_on: "true"
+  payload_off: "false"
+  device_class: window    
+  
+- platform: mqtt
+  state_topic: 'home/alarm/$online'
+  name: alarmkitchenwindow
+  payload_on: "true"
+  payload_off: "false"
+  device_class: window

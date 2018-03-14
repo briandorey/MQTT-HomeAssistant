@@ -1,0 +1,24 @@
+# bathroom
+- platform: mqtt
+  state_topic: '/home/power/gasmeter'
+  name: mqttpowergasmeter
+
+- platform: mqtt
+  state_topic: '/home/power/electricmeter'
+  name: mqttpowerelectricmeter
+
+- platform: mqtt
+  state_topic: '/home/power/mainscurrent'
+  name: mqttpowermainscurrent
+  unit_of_measurement: 'A'
+
+- platform: mqtt
+  state_topic: '/home/power/avgmainscurrent'
+  name: mqttpoweravgmainscurrent
+  unit_of_measurement: 'A'
+
+- platform: mqtt
+  state_topic: '/home/power/maxmainscurrent'
+  name: mqttpowermaxmainscurrent
+  unit_of_measurement: 'A'
+

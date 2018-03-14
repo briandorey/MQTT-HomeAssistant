@@ -1,0 +1,67 @@
+- platform: template
+  sensors:
+    central_heating_thermostat_humidity_2:
+      friendly_name: 'Humidity'
+      value_template: '{{ states.sensor.central_heating_thermostat_humidity.state }}'
+      unit_of_measurement: '%'
+
+    smoke_detector_andrew:
+      friendly_name: 'Smoke Detector'
+      value_template: '{{ states.sensor.andrew_bedroom_nest_protect_smoke_status.state }}'
+    smoke_detector_andrew_co:
+      friendly_name: 'CO Detector'
+      value_template: '{{ states.sensor.andrew_bedroom_nest_protect_co_status.state }}'
+    smoke_detector_andrew_battery:
+      friendly_name: 'Smoke Battery Status'
+      value_template: '{{ states.sensor.andrew_bedroom_nest_protect_battery_health.state }}'
+
+
+    smoke_detector_brian:
+      friendly_name: 'Smoke Detector'
+      value_template: '{{ states.sensor.brian_bedroom_nest_protect_smoke_status.state }}'
+    smoke_detector_brian_co:
+      friendly_name: 'CO Detector'
+      value_template: '{{ states.sensor.brian_bedroom_nest_protect_co_status.state }}'
+    smoke_detector_brian_battery:
+      friendly_name: 'Smoke Battery Status'
+      value_template: '{{ states.sensor.brian_bedroom_nest_protect_battery_health.state }}'
+
+    smoke_detector_master_bedroom:
+      friendly_name: 'Smoke Detector'
+      value_template: '{{ states.sensor.master_bedroom_nest_protect_smoke_status.state }}'
+    smoke_detector_master_co:
+      friendly_name: 'CO Detector'
+      value_template: '{{ states.sensor.master_bedroom_nest_protect_co_status.state }}'
+    smoke_detector_master_battery:
+      friendly_name: 'Smoke Battery Status'
+      value_template: '{{ states.sensor.master_bedroom_nest_protect_battery_health.state }}'
+
+    smoke_detector_roof:
+      friendly_name: 'Smoke Detector'
+      value_template: '{{ states.sensor.roof_nest_protect_smoke_status.state }}'
+    smoke_detector_roof_co:
+      friendly_name: 'CO Detector'
+      value_template: '{{ states.sensor.roof_nest_protect_co_status.state }}'
+    smoke_detector_roof_battery:
+      friendly_name: 'Smoke Battery Status'
+      value_template: '{{ states.sensor.roof_nest_protect_battery_health.state }}' 
+
+    smoke_detector_living_room:
+      friendly_name: 'Smoke Detector'
+      value_template: '{{ states.sensor.living_room_nest_protect_smoke_status.state }}'
+    smoke_detector_living_room_co:
+      friendly_name: 'CO Detector'
+      value_template: '{{ states.sensor.living_room_nest_protect_co_status.state }}'
+    smoke_detector_living_room_battery:
+      friendly_name: 'Smoke Battery Status'
+      value_template: '{{ states.sensor.living_room_nest_protect_battery_health.state }}'   
+
+    smoke_detector_upstairs:
+      friendly_name: 'Smoke Detector'
+      value_template: '{{ states.sensor.upstairs_nest_protect_smoke_status.state }}'
+    smoke_detector_upstairs_co:
+      friendly_name: 'CO Detector'
+      value_template: '{{ states.sensor.upstairs_nest_protect_co_status.state }}'
+    smoke_detector_upstairs_battery:
+      friendly_name: 'Smoke Battery Status'
+      value_template: '{{ states.sensor.upstairs_nest_protect_battery_health.state }}' 

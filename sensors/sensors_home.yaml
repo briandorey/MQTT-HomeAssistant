@@ -1,0 +1,146 @@
+# bathroom
+- platform: mqtt
+  state_topic: '/home/bathroom/temperature'
+  name: mqttbathroomtemperature
+  unit_of_measurement: '°C'
+
+- platform: mqtt
+  state_topic: '/home/bathroom/battery'
+  name: mqttbathroombattery
+  unit_of_measurement: 'V'
+
+- platform: mqtt
+  state_topic: '/home/bathroom/batterylow'
+  name: mqttbathroombatterylow
+
+# Bedroom 1
+- platform: mqtt
+  state_topic: '/home/bedroom1/temperature'
+  name: mqttbedroom1temperature
+  unit_of_measurement: '°C'
+
+- platform: mqtt
+  state_topic: '/home/bedroom1/battery'
+  name: mqttbedroom1battery
+  unit_of_measurement: 'V'
+
+- platform: mqtt
+  state_topic: '/home/bedroom1/batterylow'
+  name: mqttbedroom1mbatterylow
+
+# Bedroom 2
+- platform: mqtt
+  state_topic: '/home/bedroom2/temperature'
+  name: mqttbedroom2temperature
+  unit_of_measurement: '°C'
+
+- platform: mqtt
+  state_topic: '/home/bedroom2/battery'
+  name: mqttbedroom2battery
+  unit_of_measurement: 'V'
+
+- platform: mqtt
+  state_topic: '/home/bedroom2/batterylow'
+  name: mqttbedroom2batterylow
+
+# Bedroom 3
+- platform: mqtt
+  state_topic: '/home/bedroom3/temperature'
+  name: mqttbedroom3temperature
+  unit_of_measurement: '°C'
+
+- platform: mqtt
+  state_topic: '/home/bedroom3/battery'
+  name: mqttbedroom3battery
+  unit_of_measurement: 'V'
+
+- platform: mqtt
+  state_topic: '/home/bedroom3/batterylow'
+  name: mqttbedroom3batterylow
+
+# Kitchen
+- platform: mqtt
+  state_topic: '/home/kitchen/temperature'
+  name: mqttkitchentemperature
+  unit_of_measurement: '°C'
+
+- platform: mqtt
+  state_topic: '/home/kitchen/battery'
+  name: mqttkitchenbattery
+  unit_of_measurement: 'V'
+
+- platform: mqtt
+  state_topic: '/home/kitchen/batterylow'
+  name: mqttkitchenbatterylow
+
+# Living Room
+- platform: mqtt
+  state_topic: '/home/livingroom/temperature'
+  name: mqttlivingroomtemperature
+  unit_of_measurement: '°C'
+
+- platform: mqtt
+  state_topic: '/home/livingroom/battery'
+  name: mqttlivingroombattery
+  unit_of_measurement: 'V'
+
+- platform: mqtt
+  state_topic: '/home/livingroom/batterylow'
+  name: mqttlivingroombatterylow
+
+# Loft
+- platform: mqtt
+  state_topic: '/home/loft/temperature'
+  name: mqttlofttemperature
+  unit_of_measurement: '°C'
+
+- platform: mqtt
+  state_topic: '/home/loft/battery'
+  name: mqttloftbattery
+  unit_of_measurement: 'V'
+
+- platform: mqtt
+  state_topic: '/home/loft/batterylow'
+  name: mqttloftbatterylow
+
+# outdoors
+- platform: mqtt
+  state_topic: '/home/outdoors/temperature'
+  name: mqttoutdoorstemperature
+  unit_of_measurement: '°C'
+
+- platform: mqtt
+  state_topic: '/home/outdoors/battery'
+  name: mqttoutdoorsbattery
+  unit_of_measurement: 'V'
+
+- platform: mqtt
+  state_topic: '/home/outdoors/batterylow'
+  name: mqttoutdoorsbatterylow
+
+- platform: mqtt
+  state_topic: '/home/outdoors/pressure'
+  name: mqttoutdoorspressure
+
+- platform: mqtt
+  state_topic: '/home/outdoors/humidity'
+  name: mqttoutdoorshumidity
+
+# Water
+- platform: mqtt
+  state_topic: '/home/water/solarcollector'
+  name: mqttwatersolarcollector   
+  unit_of_measurement: '°C' 
+  #value_template: '{{round(2)}}'
+
+- platform: mqtt
+  state_topic: '/home/water/cylindertop'
+  name: mqttwatercylindertop
+  unit_of_measurement: '°C'
+  #value_template: '{{states.sensor.mqttwatercylindertop.state | round(2)}}'
+
+- platform: mqtt
+  state_topic: '/home/water/cylinderbase'
+  name: mqttwatercylinderbase
+  unit_of_measurement: '°C'
+  #value_template: '{{states.sensor.mqttwatercylinderbase.state | round(2)}}'

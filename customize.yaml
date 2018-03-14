@@ -1,0 +1,213 @@
+# smoke detectors
+sensor.smoke_detector_andrew:
+  icon: mdi:nest-protect
+sensor.smoke_detector_andrew_co:
+  icon: mdi:alert-box
+sensor.smoke_detector_andrew_battery:
+  icon: mdi:battery-outline
+
+sensor.smoke_detector_brian:
+  icon: mdi:nest-protect
+sensor.smoke_detector_brian_co:
+  icon: mdi:alert-box
+sensor.smoke_detector_brian_battery:
+  icon: mdi:battery-outline
+
+sensor.smoke_detector_master_bedroom:
+  icon: mdi:nest-protect
+sensor.smoke_detector_master_co:
+  icon: mdi:alert-box
+sensor.smoke_detector_master_battery:
+  icon: mdi:battery-outline
+
+sensor.smoke_detector_roof:
+  icon: mdi:nest-protect
+sensor.smoke_detector_roof_co:
+  icon: mdi:alert-box
+sensor.smoke_detector_roof_battery:
+  icon: mdi:battery-outline
+
+sensor.smoke_detector_living_room:
+  icon: mdi:nest-protect
+sensor.smoke_detector_living_room_co:
+  icon: mdi:alert-box
+sensor.smoke_detector_living_room_battery:
+  icon: mdi:battery-outline    
+
+sensor.smoke_detector_upstairs:
+  icon: mdi:nest-protect
+sensor.smoke_detector_upstairs_co:
+  icon: mdi:alert-box
+sensor.smoke_detector_upstairs_battery:
+  icon: mdi:battery-outline
+
+# Home Sensor Names
+
+# bathroom
+sensor.mqttbathroomtemperature:
+  friendly_name: 'Bathroom Temperature'
+  icon: mdi:thermometer
+
+sensor.mqttbathroombattery:
+  friendly_name: 'Bathroom Battery'
+  icon: mdi:battery-outline
+
+sensor.mqttbathroombatterylow:
+  friendly_name: 'Bathroom Battery Low'
+  icon: mdi:battery-alert
+
+# Bedroom 1
+sensor.mqttbedroom1temperature:
+  friendly_name: 'Bedroom (Brian) Temperature'
+  icon: mdi:thermometer
+
+sensor.mqttbedroom1battery:
+  friendly_name: 'Bedroom (Brian) Battery'
+  icon: mdi:battery-outline
+
+sensor.mqttbedroom1mbatterylow:
+  friendly_name: 'Bedroom (Brian) Battery Low'
+  icon: mdi:battery-alert
+
+# Bedroom 2
+sensor.mqttbedroom2temperature:
+  friendly_name: 'Bedroom (Andrew) Temperature'
+  icon: mdi:thermometer
+
+sensor.mqttbedroom2battery:
+  friendly_name: 'Bedroom (Andrew) Battery'
+  icon: mdi:battery-outline
+
+sensor.mqttbedroom2batterylow:
+  friendly_name: 'Bedroom (Andrew) Battery Low'
+  icon: mdi:battery-alert
+
+# Bedroom 3
+sensor.mqttbedroom3temperature:
+  friendly_name: 'Bedroom (Master) Temperature'
+  icon: mdi:thermometer
+
+sensor.mqttbedroom3battery:
+  friendly_name: 'Bedroom (Master) Battery'
+  icon: mdi:battery-outline
+
+sensor.mqttbedroom3batterylow:
+  friendly_name: 'Bedroom (Master) Battery Low'
+  icon: mdi:battery-alert
+
+# Kitchen
+sensor.mqttkitchentemperature:
+  friendly_name: 'Kitchen Temperature'
+  icon: mdi:thermometer
+
+sensor.mqttkitchenbattery:
+  friendly_name: 'Kitchen Battery'
+  icon: mdi:battery-outline
+
+sensor.mqttkitchenbatterylow:
+  friendly_name: 'Kitchen Battery Low'
+  icon: mdi:battery-alert
+
+# Living Room
+sensor.mqttlivingroomtemperature:
+  friendly_name: 'Living Room Temperature'
+  icon: mdi:thermometer
+
+sensor.mqttlivingroombattery:
+  friendly_name: 'Living Room Battery'
+  icon: mdi:battery-outline
+
+sensor.mqttlivingroombatterylow:
+  friendly_name: 'Living Room Battery Low'
+  icon: mdi:battery-alert
+
+# Loft
+sensor.mqttlofttemperature:
+  friendly_name: 'Loft Temperature'
+  icon: mdi:thermometer
+
+sensor.mqttloftbattery:
+  friendly_name: 'Loft Battery'
+  icon: mdi:battery-outline
+
+sensor.mqttloftbatterylow:
+  friendly_name: 'Loft Battery Low'
+  icon: mdi:battery-alert
+
+# outdoors
+sensor.mqttoutdoorstemperature:
+  friendly_name: 'Outdoor Temperature'
+  icon: mdi:thermometer
+
+sensor.mqttoutdoorsbattery:
+  friendly_name: 'Outdoor Battery'
+  icon: mdi:battery-outline
+
+sensor.mqttoutdoorsbatterylow:
+  friendly_name: 'Outdoor Battery Low'
+  icon: mdi:battery-alert
+
+sensor.mqttoutdoorspressure:
+  friendly_name: 'Air Pressure'
+  icon: mdi:waves
+
+sensor.mqttoutdoorshumidity:
+  friendly_name: 'Outdoor Humidity'
+  icon: mdi:weather-rainy
+
+# Water
+
+sensor.mqttwatersolarcollector:
+  friendly_name: 'Solar Collector'
+  icon: mdi:thermometer 
+
+sensor.mqttwatercylindertop:
+  friendly_name: 'Cylinder Top'
+  icon: mdi:thermometer 
+
+sensor.mqttwatercylinderbase:
+  friendly_name: 'Cylinder Base'
+  icon: mdi:thermometer   
+
+# Alarm
+
+binary_sensor.alarmfrontdoor:
+  friendly_name: 'Front Door'
+
+binary_sensor.alarmbackdoor:
+  friendly_name: 'Back Door'
+
+binary_sensor.alarmshedsdoor:
+  friendly_name: 'Sheds'
+
+binary_sensor.alarmlrwindow:
+  friendly_name: 'Living Room Window'
+
+binary_sensor.alarmbrianwindow:
+  friendly_name: 'Bedroom (Brian) Window'
+
+binary_sensor.alarmkitchenwindow:
+  friendly_name: 'Kitchen Window'
+
+# Power
+
+sensor.mqttpowergasmeter:
+  friendly_name: 'Gas Meter'
+  icon: mdi:speedometer
+
+sensor.mqttpowerelectricmeter:
+  friendly_name: 'Electric Meter'
+  icon: mdi:speedometer 
+
+sensor.mqttpowermainscurrent:
+  friendly_name: 'Mains Amps'
+  icon: mdi:power-plug 
+
+sensor.mqttpoweravgmainscurrent:
+  friendly_name: 'Average Mains Amps'
+  icon: mdi:power-plug 
+
+sensor.mqttpowermaxmainscurrent:
+  friendly_name: 'Max Mains Amps'
+  icon: mdi:power-plug   
+          

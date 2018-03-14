@@ -1,0 +1,8 @@
+media_player.kd55xe9005:
+  name: Brian TV
+  platform: cast
+  unique_id: xxxxxxxxxxxxxxxxxxxxxx
+climate.central_heating:
+  name:
+  platform: nest
+  unique_id: xxxxxxxxxxxxxxxxxxxxxx
